@@ -4,7 +4,80 @@
 
 This repository is part of the [Collab-Multimodal-Lifelong-Learning](https://github.com/Collab-Multimodal-Lifelong-Learning) project, **Developing a Sustainable Collaborative Multi-modal Lifelong Learning Framework**. It brings together research on how large language models (LLMs) acquire, retain, update, and reason over knowledge as information and learning conditions evolve.
 
-Browse the [12 research projects](#code-and-resources) for source code and documentation.
+## Research list
+
+### Prompting and instruction learning
+
+- **Fixed Input Parameterization for Efficient Prompting** (Findings of ACL 2023) — Eunbi Choi et al.
+  - Encodes fixed prompts in model parameters so they need not be appended to every input.
+  - [Paper](https://aclanthology.org/2023.findings-acl.533/) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/Fixed-Input-Parameterization/blob/bb46c78fcf52f7922e9fe9a9783d3341d6ab632d/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/Fixed-Input-Parameterization) · [Upstream](https://github.com/unbiarirang/Fixed-Input-Parameterization)
+
+- **Gradient Ascent Post-training Enhances Language Model Generalization (GAP)** (ACL 2023) — Dongkeun Yoon et al.
+  - Gradient-ascent post-training for language-model generalization.
+  - [Paper](https://arxiv.org/abs/2306.07052) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/GAP/blob/4f0b3890536cbac5f708a1eddb4abf9cdc3c4159/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/GAP) · [Upstream](https://github.com/kaistAI/GAP)
+
+- **Guess the Instruction! Flipped Learning Makes Language Models Stronger Zero-Shot Learners** (ICLR 2023) — Seonghyeon Ye et al.
+  - Learning to infer instructions for zero-shot generalization.
+  - [Paper](https://arxiv.org/abs/2210.02969) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/Flipped-Learning/blob/ad7d6ea590bc087b01a82bfc9ed02d97fccca977/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/Flipped-Learning) · [Upstream](https://github.com/seonghyeonye/Flipped-Learning)
+
+- **Exploring the Benefits of Training Expert Language Models over Instruction Tuning** (ICML 2023) — Joel Jang et al.
+  - Training and evaluation of expert language models.
+  - [Paper](https://arxiv.org/abs/2302.03202) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/ELM/blob/7edc2660049f16c13a1bf67471c663bcbe6c504f/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/ELM) · [Upstream](https://github.com/joeljang/ELM)
+
+- **Investigating the Effectiveness of Task-Agnostic Prefix Prompt for Instruction Following (TAPP)** — Seonghyeon Ye et al.
+  - Studies whether prepending the same prefix across tasks improves zero-shot instruction following.
+  - [Paper](https://arxiv.org/abs/2302.14691) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/TAPP/blob/fa9b19cd1dca32d924e43e0257018cc03ad0a80e/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/TAPP) · [Upstream](https://github.com/seonghyeonye/TAPP)
+
+### Knowledge, grounding, and reasoning
+
+- **Knowledge Unlearning for Mitigating Privacy Risks in Language Models** — Joel Jang et al.
+  - Language-model knowledge unlearning for privacy.
+  - [Paper](https://arxiv.org/abs/2210.01504) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/knowledge-unlearning/blob/53b118ea2f91029e79ab7832b8626f8c1cc617d0/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/knowledge-unlearning) · [Upstream](https://github.com/joeljang/knowledge-unlearning)
+
+- **How Well Do LLMs Truly Ground?** — Hyunji Lee et al.
+  - Evaluation of grounding in large language models.
+  - [Paper](https://arxiv.org/abs/2311.09069) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/How-Well-Do-LLMs-Truly-Ground/blob/52115d43d0b7194ae255cb1381e426a919c96b5d/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/How-Well-Do-LLMs-Truly-Ground) · [Upstream](https://github.com/kaistAI/How-Well-Do-LLMs-Truly-Ground)
+
+- **LangBridge: Multilingual Reasoning Without Multilingual Supervision** (ACL 2024) — Dongkeun Yoon et al.
+  - Multilingual reasoning without multilingual supervision.
+  - [Paper](https://aclanthology.org/2024.acl-long.405/) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/LangBridge/blob/373e789603e2b8cb11967126c3b194c1f735727b/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/LangBridge) · [Upstream](https://github.com/kaistAI/LangBridge)
+
+- **Reasoning Models Better Express Their Confidence** (NeurIPS 2025) — Dongkeun Yoon et al.
+  - Studies how extended reasoning and deliberative behaviors can improve confidence calibration and allow confidence to be refined over a reasoning trace.
+  - [Paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/95ee7181fe256439dca74ec794b33bb6-Abstract-Conference.html) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/reasoning-models-confidence/blob/255e1777f46d37069392efb643f669e329fd223a/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/reasoning-models-confidence) · [Upstream](https://github.com/MattYoon/reasoning-models-confidence)
+
+- **Can Large Language Models Keep Up? Benchmarking Online Adaptation to Continual Knowledge Streams (OAKS)** (ACL 2026) — Jiyeon Kim et al.
+  - Introduces **OAKS**, a benchmark for tracking facts that evolve across a stream of context chunks, and examines limitations in current online adaptation methods.
+  - [Paper](https://aclanthology.org/2026.acl-long.1956/) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/OAKS/blob/679445b674c075345787a6ee7fb1bfaba9b78632/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/OAKS) · [Upstream](https://github.com/kaistAI/OAKS)
+
+### State-space language models
+
+- **Mitigating Over-Smoothing in Mamba2 via Spectral Domain Analysis** — Seojin Kim, Yehjin Shin, and Noseong Park
+  - High-frequency enhancement to reduce over-smoothing in Mamba2.
+  - [Paper](https://openreview.net/forum?id=r08kqzrito) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/mamba2-high-freq-enhance/blob/b44332b9ce3c0a661bd36438e225a993161dae21/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/mamba2-high-freq-enhance) · [Upstream](https://github.com/sjiinkim/mamba2-high-freq-enhance)
+
+- **Graph Signal Processing Meets Mamba2: Adaptive Filter Bank via Delta Modulation** (ICLR 2026) — Yehjin Shin, Seojin Kim, and Noseong Park
+  - Adaptive graph filter banks for Mamba2 sequence modeling.
+  - [Paper](https://openreview.net/forum?id=w0XhHcXfKv) · [Project code](https://github.com/Collab-Multimodal-Lifelong-Learning/HADES/blob/545d23bcb2d2c90f0e51800c9447fd662579031b/README.md) · [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/HADES) · [Upstream](https://github.com/yehjin-shin/HADES)
+
+### Additional project research
+
+The following publications are highlighted in the project's July 15, 2026 progress evaluation.
+
+#### Knowledge Acquisition and Continual Adaptation
+
+- **[Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition](https://proceedings.iclr.cc/paper_files/paper/2025/hash/f8f3250f3f31387906e49aec41602f36-Abstract-Conference.html)** — *ICLR 2025 (Oral)*.
+  - Investigates how declining diversity in the use of internal knowledge sources is associated with weaker acquisition and retention of new knowledge.
+
+#### Reasoning Analysis and Confidence
+
+- **[The CoT Encyclopedia: Analyzing, Predicting, and Controlling how a Reasoning Model will Think](https://proceedings.iclr.cc/paper_files/paper/2026/hash/e560202b6e779a82478edb46c6f8f4dd-Abstract-Conference.html)** — *ICLR 2026*.
+  - Introduces a bottom-up framework for extracting, clustering, interpreting, and steering reasoning strategies from model-generated chains of thought.
+
+#### Structured Reasoning
+
+- **[TSLM: Tree-Structured Language Modeling for Divergent Thinking](https://arxiv.org/abs/2601.22688)** — *ICLR 2026*.
+  - Explores tree-structured language generation that branches and expands multiple reasoning paths within a single process.
 
 ## Research Overview
 
@@ -65,33 +138,6 @@ The principal research directions are:
 
 **Research team:** Prof. Minjoon Seo, KAIST.
 
-## Representative Research and Publications
-
-The following publications are highlighted in the project's July 15, 2026 progress evaluation.
-
-### Knowledge Acquisition and Continual Adaptation
-
-- **[Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition](https://proceedings.iclr.cc/paper_files/paper/2025/hash/f8f3250f3f31387906e49aec41602f36-Abstract-Conference.html)** — *ICLR 2025 (Oral)*.
-  - Investigates how declining diversity in the use of internal knowledge sources is associated with weaker acquisition and retention of new knowledge.
-
-- **[Can Large Language Models Keep Up? Benchmarking Online Adaptation to Continual Knowledge Streams](https://aclanthology.org/2026.acl-long.1956/)** — *ACL 2026*.
-  - Introduces **OAKS**, a benchmark for tracking facts that evolve across a stream of context chunks, and examines limitations in current online adaptation methods.
-  - [OAKS code and benchmark](https://github.com/Collab-Multimodal-Lifelong-Learning/OAKS/blob/c1a76e66b5b2276973ee8ee3de7063721e22a88f/README.md)
-
-### Reasoning Analysis and Confidence
-
-- **[Reasoning Models Better Express Their Confidence](https://proceedings.neurips.cc/paper_files/paper/2025/hash/95ee7181fe256439dca74ec794b33bb6-Abstract-Conference.html)** — *NeurIPS 2025*.
-  - Studies how extended reasoning and deliberative behaviors can improve confidence calibration and allow confidence to be refined over a reasoning trace.
-  - [Project code and setup](https://github.com/Collab-Multimodal-Lifelong-Learning/reasoning-models-confidence/blob/1bb950d60b4556e1d02560fd55e5bd866354afec/README.md)
-
-- **[The CoT Encyclopedia: Analyzing, Predicting, and Controlling how a Reasoning Model will Think](https://proceedings.iclr.cc/paper_files/paper/2026/hash/e560202b6e779a82478edb46c6f8f4dd-Abstract-Conference.html)** — *ICLR 2026*.
-  - Introduces a bottom-up framework for extracting, clustering, interpreting, and steering reasoning strategies from model-generated chains of thought.
-
-### Structured Reasoning
-
-- **[TSLM: Tree-Structured Language Modeling for Divergent Thinking](https://arxiv.org/abs/2601.22688)** — *ICLR 2026*.
-  - Explores tree-structured language generation that branches and expands multiple reasoning paths within a single process.
-
 ## Evaluation Highlights
 
 The following figures are **project-reported results** from the **July 15, 2026** progress evaluation. They are not independently reproduced results from the code in this repository.
@@ -119,7 +165,7 @@ The project evaluates continual updating of LLM knowledge using **FUAR** (*Forgo
 
 ## Code and Resources
 
-Each project is a Git submodule pinned to a commit in its organization fork. The table links to that revision's README and lists both the fork and its upstream repository.
+Each Project code link opens the README at the pinned commit in the organization fork. The corresponding submodule uses the same revision. Open the upstream repository for the original source.
 
 Clone this repository and its project folders with:
 
@@ -128,21 +174,6 @@ git clone --recurse-submodules --shallow-submodules https://github.com/Collab-Mu
 ```
 
 In an existing checkout, run `git submodule update --init --recursive --depth 1`.
-
-| Project README | Research focus | Repositories |
-| --- | --- | --- |
-| [Fixed-Input-Parameterization](https://github.com/Collab-Multimodal-Lifelong-Learning/Fixed-Input-Parameterization/blob/97639ee4c0f9d8034830346268e0401c475037d8/README.md) | Efficient prompting through fixed input parameterization. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/Fixed-Input-Parameterization) · [Upstream](https://github.com/unbiarirang/Fixed-Input-Parameterization) |
-| [knowledge-unlearning](https://github.com/Collab-Multimodal-Lifelong-Learning/knowledge-unlearning/blob/732876dc19a782c4440c3565cf9821df0a4c7ca0/README.md) | Language-model knowledge unlearning for privacy. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/knowledge-unlearning) · [Upstream](https://github.com/joeljang/knowledge-unlearning) |
-| [GAP](https://github.com/Collab-Multimodal-Lifelong-Learning/GAP/blob/fe89b0ad6c5c13f7f4e848ad3058a7df1fc3b5c6/README.md) | Gradient-ascent post-training for language-model generalization. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/GAP) · [Upstream](https://github.com/kaistAI/GAP) |
-| [Flipped-Learning](https://github.com/Collab-Multimodal-Lifelong-Learning/Flipped-Learning/blob/9d2404eb87ed3d5099e09d1af2e89f2852da4afc/README.md) | Learning to infer instructions for zero-shot generalization. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/Flipped-Learning) · [Upstream](https://github.com/seonghyeonye/Flipped-Learning) |
-| [How-Well-Do-LLMs-Truly-Ground](https://github.com/Collab-Multimodal-Lifelong-Learning/How-Well-Do-LLMs-Truly-Ground/blob/df3602b07e3e365f0903768a101306bacc1f8fd6/README.md) | Evaluation of grounding in large language models. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/How-Well-Do-LLMs-Truly-Ground) · [Upstream](https://github.com/kaistAI/How-Well-Do-LLMs-Truly-Ground) |
-| [ELM](https://github.com/Collab-Multimodal-Lifelong-Learning/ELM/blob/27fc2a326cd8846717a022db1cbd94d393420bce/README.md) | Training and evaluation of expert language models. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/ELM) · [Upstream](https://github.com/joeljang/ELM) |
-| [TAPP](https://github.com/Collab-Multimodal-Lifelong-Learning/TAPP/blob/f1e7c0bb894f192f71b9554e8a8ff3b0be01cc3a/README.md) | Task-agnostic prefix prompts for instruction following. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/TAPP) · [Upstream](https://github.com/seonghyeonye/TAPP) |
-| [LangBridge](https://github.com/Collab-Multimodal-Lifelong-Learning/LangBridge/blob/4f43fb27cbed0b7d879f709831cc89738fac1039/README.md) | Multilingual reasoning without multilingual supervision. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/LangBridge) · [Upstream](https://github.com/kaistAI/LangBridge) |
-| [reasoning-models-confidence](https://github.com/Collab-Multimodal-Lifelong-Learning/reasoning-models-confidence/blob/1bb950d60b4556e1d02560fd55e5bd866354afec/README.md) | Measurement and calibration of confidence in reasoning models. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/reasoning-models-confidence) · [Upstream](https://github.com/MattYoon/reasoning-models-confidence) |
-| [mamba2-high-freq-enhance](https://github.com/Collab-Multimodal-Lifelong-Learning/mamba2-high-freq-enhance/blob/2932bf9d5460e2339af10607d1184c24f7ff78d8/README.md) | High-frequency enhancement to reduce over-smoothing in Mamba2. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/mamba2-high-freq-enhance) · [Upstream](https://github.com/sjiinkim/mamba2-high-freq-enhance) |
-| [HADES](https://github.com/Collab-Multimodal-Lifelong-Learning/HADES/blob/56816a942f16809dbcfd4662c06d25e24d74b561/README.md) | Adaptive graph filter banks for Mamba2 sequence modeling. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/HADES) · [Upstream](https://github.com/yehjin-shin/HADES) |
-| [OAKS](https://github.com/Collab-Multimodal-Lifelong-Learning/OAKS/blob/c1a76e66b5b2276973ee8ee3de7063721e22a88f/README.md) | Benchmark and code for online adaptation to changing facts in a knowledge stream. | [Fork](https://github.com/Collab-Multimodal-Lifelong-Learning/OAKS) · [Upstream](https://github.com/kaistAI/OAKS) |
 
 ## Related Repositories
 
@@ -155,4 +186,4 @@ Other research areas within [Collab-Multimodal-Lifelong-Learning](https://github
 
 ## Acknowledgment
 
-This research is associated with the Korean national R&D project **“Developing a Sustainable Collaborative Multi-modal Lifelong Learning Framework” (Project No. 2022-0-00113)**, within the *Human-Centered AI Core Technology Development* program, supported by the Ministry of Science and ICT (MSIT) and administered by the Institute of Information & Communications Technology Planning & Evaluation (IITP).
+This research is associated with the Korean national R&D project **“Developing a Sustainable Collaborative Multi-modal Lifelong Learning Framework” (Project No. 2022-0-00113)**, conducted within the *Human-Centered AI Core Technology Development* program, supported by the Ministry of Science and ICT (MSIT) and administered by the Institute of Information & Communications Technology Planning & Evaluation (IITP).
