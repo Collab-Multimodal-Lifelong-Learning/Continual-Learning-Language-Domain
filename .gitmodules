@@ -1,0 +1,36 @@
+[submodule "Fixed-Input-Parameterization"]
+	path = Fixed-Input-Parameterization
+	url = https://github.com/unbiarirang/Fixed-Input-Parameterization.git
+[submodule "knowledge-unlearning"]
+	path = knowledge-unlearning
+	url = https://github.com/joeljang/knowledge-unlearning.git
+[submodule "GAP"]
+	path = GAP
+	url = https://github.com/kaistAI/GAP.git
+[submodule "Flipped-Learning"]
+	path = Flipped-Learning
+	url = https://github.com/seonghyeonye/Flipped-Learning.git
+[submodule "How-Well-Do-LLMs-Truly-Ground"]
+	path = How-Well-Do-LLMs-Truly-Ground
+	url = https://github.com/kaistAI/How-Well-Do-LLMs-Truly-Ground.git
+[submodule "ELM"]
+	path = ELM
+	url = https://github.com/joeljang/ELM.git
+[submodule "TAPP"]
+	path = TAPP
+	url = https://github.com/seonghyeonye/TAPP.git
+[submodule "LangBridge"]
+	path = LangBridge
+	url = https://github.com/kaistAI/LangBridge.git
+[submodule "reasoning-models-confidence"]
+	path = reasoning-models-confidence
+	url = https://github.com/MattYoon/reasoning-models-confidence.git
+[submodule "mamba2-high-freq-enhance"]
+	path = mamba2-high-freq-enhance
+	url = https://github.com/sjiinkim/mamba2-high-freq-enhance.git
+[submodule "HADES"]
+	path = HADES
+	url = https://github.com/yehjin-shin/HADES.git
+[submodule "OAKS"]
+	path = OAKS
+	url = https://github.com/kaistAI/OAKS.git
